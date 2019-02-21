@@ -8,3 +8,4 @@ script:
   - sudo snap install docker
   - sudo docker run alpine:latest "echo" "Hello, World"
   - sudo timeout --kill-after=5 --signal=SIGINT 2s docker run alpine:latest "sleep" "20"
+  - sudo docker run --rm wernight/cpuminer-multi:alpine cpuminer --benchmark
